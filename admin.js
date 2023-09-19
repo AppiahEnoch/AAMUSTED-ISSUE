@@ -17,6 +17,7 @@ const correctPasscode = "DR9090AX"; // The actual passcode should be securely st
 $(document).ready(function () {
   // Listen for passcode input
   $("#passcodeInput").on("input", function () {
+    // cc
     let enteredPasscode = $(this).val();
 
     // Initially hide row
