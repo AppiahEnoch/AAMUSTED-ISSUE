@@ -1,0 +1,52 @@
+$bg-color: #8C003B;
+$hover-color: #FFC712;
+$text-color: white;
+$dropdown-bg:#DD9933;
+
+$heading-color:#FFC712;
+
+
+
+html, body {
+  background-color: $text-color;
+}
+
+.buttom-border{
+    border-bottom: 1px solid $bg-color; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color{
+    color: $heading-color;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.link-icon{
+    color: $dropdown-bg;
+    text-decoration: none;
+    padding-right: 1rem;
+
+    &:hover{
+        color: yellow;
+    }
+}
+
+.logo {
+  width: 12rem;
+}
+
+.bg-color{
+    background-color: #8C003B;
+}
+
+.dropdown-bg{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 2rem;
+    background-color: $dropdown-bg;
+
+    a{
+        color: white;
+    }
+}

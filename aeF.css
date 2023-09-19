@@ -1,0 +1,163 @@
+#indexwrapper .row {
+  margin: 0 auto;
+  max-width: 100%;
+}
+#indexwrapper .card {
+  border: none;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+#indexwrapper .card-body {
+  padding: 0;
+}
+#indexwrapper .card-body label {
+  font-size: 1.125rem;
+}
+#indexwrapper .card-body input.form-control {
+  height: 2.8125rem;
+  width: 100%;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.25rem;
+}
+#indexwrapper label {
+  height: 2.8125rem;
+  width: 100%;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.25rem;
+}
+
+#studentCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.issueCard {
+  border-color: #8C003B;
+  margin-bottom: 2rem;
+  flex: 0 1 calc(33.333% - 2rem);
+  max-width: 20rem;
+  height: 15rem;
+  max-height: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.issueCard:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .issueCard {
+    flex: 0 1 calc(50% - 2rem);
+  }
+}
+@media (max-width: 480px) {
+  .issueCard {
+    flex: 0 1 100%;
+  }
+}
+.issueCard .card.courseIssueCard {
+  margin: 0.2rem;
+}
+.issueCard .card.courseIssueCard .card-title {
+  font-size: 1rem;
+}
+.issueCard .card.issueHeaderCard {
+  position: relative;
+  height: 3rem;
+  background-color: #8C003B;
+  color: white;
+}
+.issueCard .card.issueHeaderCard .close-icon {
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.3rem;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+.issueCard .card.issueHeaderCard .close-icon:hover {
+  font-size: 1.2rem;
+  color: red;
+}
+.issueCard .card.issueHeaderCard .card-title {
+  font-size: 1rem;
+}
+@media (min-width: 320px) {
+  .issueCard .card.issueHeaderCard {
+    height: 5.5rem;
+  }
+}
+@media (min-width: 481px) {
+  .issueCard .card.issueHeaderCard {
+    height: 5rem;
+  }
+}
+@media (min-width: 641px) {
+  .issueCard .card.issueHeaderCard {
+    height: 4.5rem;
+  }
+}
+@media (min-width: 961px) {
+  .issueCard .card.issueHeaderCard {
+    height: 4rem;
+  }
+}
+@media (min-width: 1025px) {
+  .issueCard .card.issueHeaderCard {
+    height: 3.5rem;
+  }
+}
+@media (min-width: 1281px) {
+  .issueCard .card.issueHeaderCard {
+    height: 3rem;
+  }
+}
+.issueCard .card.issueOptionsCard {
+  border-color: #8C003B;
+}
+.issueCard .card.issueOptionsCard .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0.5rem;
+}
+.issueCard .card.issueOptionsCard .card:hover {
+  transform: scale(1.05);
+  background-color: #8C003B;
+  color: white;
+}
+.issueCard .card.issueOptionsCard .card.issueICCard label, .issueCard .card.issueOptionsCard .card.issueNotInPortalCard label, .issueCard .card.issueOptionsCard .card.issueOtherCard label, .issueCard .card.issueOptionsCard .card.issueOtherTextareaCard label {
+  font-size: 0.8rem;
+}
+.issueCard .card.issueOptionsCard .card.issueICCard label input[type=radio], .issueCard .card.issueOptionsCard .card.issueNotInPortalCard label input[type=radio], .issueCard .card.issueOptionsCard .card.issueOtherCard label input[type=radio], .issueCard .card.issueOptionsCard .card.issueOtherTextareaCard label input[type=radio] {
+  width: 12px;
+  height: 15px;
+}
+.issueCard .card.issueOptionsCard .card.issueOtherTextareaCard textarea {
+  resize: none;
+}
+
+#saveWrapper .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#saveWrapper .col i {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#saveWrapper .col i:hover {
+  transform: scale(1.2);
+}
+#saveWrapper .col i.fa-download:hover {
+  color: darkred;
+}
+
+#footerWrapper .col i {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#footerWrapper .col i:hover {
+  transform: scale(1.2);
+}
+#footerWrapper .col i.fa-download:hover {
+  color: darkred;
+}/*# sourceMappingURL=aeF.css.map */

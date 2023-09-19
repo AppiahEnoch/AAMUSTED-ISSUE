@@ -1,0 +1,195 @@
+#indexwrapper {
+ 
+    .row {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  
+    .card {
+        border: none;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+    }
+  
+    .card-body {
+      padding: 0;
+  
+      label {
+        font-size: 1.125rem;
+      }
+  
+      input.form-control {
+        height: 2.8125rem;
+        width: 100%;
+        font-size: 1.125rem;
+        border-radius: 0.5rem;
+   
+        padding: 0.1rem 0.25rem;
+      }
+    }
+
+    label{
+        height: 2.8125rem;
+        width: 100%;
+        font-size: 1.125rem;
+        border-radius: 0.5rem;
+   
+        padding: 0.1rem 0.25rem;
+    }
+  }
+  
+
+
+
+
+#studentCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; // 1rem vertical gap and 2rem horizontal gap
+  }
+  
+  .issueCard {
+    border-color: #8C003B;
+    margin-bottom: 2rem;
+    flex: 0 1 calc(33.333% - 2rem);
+    max-width: 20rem;
+    height: 15rem;
+    max-height: 15rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    @media(max-width: 768px) {
+      flex: 0 1 calc(50% - 2rem);
+    }
+  
+    @media(max-width: 480px) {
+      flex: 0 1 100%;
+    }
+  
+    .card {
+      &.courseIssueCard {
+        margin: 0.2rem;
+  
+        .card-title {
+          font-size: 1rem;
+        }
+      }
+  
+      &.issueHeaderCard {
+        position: relative;
+        height: 3rem;
+        background-color: #8C003B;
+        color: white;
+  
+        .close-icon {
+            font-size: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: .3rem;
+            transition: font-size 0.3s ease, color 0.3s ease;
+          
+            &:hover {
+              font-size: 1.2rem;
+              color: red;
+            }
+          }
+          
+  
+        .card-title {
+          font-size: 1rem;
+        }
+  
+        @media(min-width: 320px) { height: 5.5rem; }
+        @media(min-width: 481px) { height: 5rem; }
+        @media(min-width: 641px) { height: 4.5rem; }
+        @media(min-width: 961px) { height: 4rem; }
+        @media(min-width: 1025px) { height: 3.5rem; }
+        @media(min-width: 1281px) { height: 3rem; }
+      }
+  
+      &.issueOptionsCard {
+        border-color: #8C003B;
+  
+        .card {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.05);
+            background-color: #8C003B;
+            color: white;
+          }
+  
+          margin: 0.5rem;
+  
+          &.issueICCard, &.issueNotInPortalCard, &.issueOtherCard, &.issueOtherTextareaCard {
+            label {
+              font-size: 0.8rem;
+  
+              input[type="radio"] {
+                width: 12px;
+                height: 15px;
+              }
+            }
+          }
+  
+          &.issueOtherTextareaCard {
+            textarea {
+              resize: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+
+  #saveWrapper {
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+  
+        &.fa-download {
+    
+          
+          &:hover {
+            color: darkred;
+          }
+        }
+      }
+    }
+  }
+  
+  #footerWrapper {
+    .col {
+      i {
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+  
+        &.fa-download {
+      
+          
+          &:hover {
+            color: darkred;
+          }
+        }
+      }
+    }
+  }
+  
+  

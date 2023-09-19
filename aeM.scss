@@ -1,0 +1,211 @@
+// SCSS targeting only the "modalTranscript" modal
+#uploadLecturesModal,#studentInstructionsModal {
+  // Customizing the modal-header
+  .modal-header {
+    background: linear-gradient(500deg, #6d5acf, #8C003B);
+    color: #fff;
+
+    .modal-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .btn-close {
+      background-color: rgba(255, 255, 255, 0.2);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  // Customizing the modal-body
+  .modal-body {
+    background: #f7f7f7;
+
+    // Styling the Bootstrap card
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .card-body {
+        padding: 1.5rem;
+
+        .index-section,
+        .bulk-print-section,
+        .print-button-section {
+          margin-bottom: 1.5rem;
+        }
+
+        // Inner card for date pickers
+        .card {
+          background: #fff;
+          border: 1px solid #e2e2e2;
+          border-radius: 0.5rem;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+          .date-pickers {
+            margin-top: 1rem;
+
+            label {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+
+            input {
+              border-radius: 0.25rem;
+            }
+          }
+        }
+
+        // Print Button styling
+        #printButton {
+          background: linear-gradient(45deg, #4caf50, #8bc34a);
+          color: #fff;
+          padding: 0.5rem 1.5rem;
+          font-weight: 600;
+          border: none;
+
+          &:hover {
+            background: linear-gradient(45deg, #66bb6a, #9ccc65);
+          }
+        }
+      }
+    }
+  }
+
+  // Customizing the modal-footer
+  .modal-footer {
+    background: #f7f7f7;
+
+    button {
+      background: #6d5acf;
+      color: #fff;
+      &:hover {
+        background: #4e36d8;
+      }
+    }
+  }
+}
+
+
+
+input[type],
+input[type="file"],
+textarea,
+select {
+  &:hover, &:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+
+// General modal styles
+.modal {
+  font-family: Arial, sans-serif;
+
+  // Header Styles
+  .modal-header {
+    background-color: #2a2a72;
+    color: white;
+    h5 {
+      font-weight: bold;
+    }
+    .btn-close {
+      background-color: #ffffff;
+      color: #000;
+    }
+  }
+
+  // Body Styles
+  .modal-body {
+    background-color: #f3f3f3;
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .card-body {
+        h6 {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 0.9em;
+          line-height: 1.6;
+          color: #555;
+        }
+
+    
+
+
+      }
+    }
+  }
+
+  // Footer Styles
+  .modal-footer {
+    background-color: #f3f3f3;
+    .row {
+      .col-12 {
+        button {
+          background-color: #2a2a72;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 4px;
+          &:hover {
+            background-color: #40407a;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+#studentInstructionsModal{
+  .mb-3 {
+    background: #f7f7f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    p {
+      font-size: 1em;
+      line-height: 1.6;
+  
+      // First paragraph styling
+      &:first-child {
+        font-weight: bold;
+        color: #d9534f; // red color for warning
+        border-bottom: 2px solid #d9534f;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+  
+      // Second paragraph styling
+      &:nth-child(2) {
+        color: #333;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    i {
+      margin: 0 10px;
+    }
+  }
+}
