@@ -209,3 +209,13 @@ select {
     }
   }
 }
+
+
+#template {
+  max-width: 4rem;
+  transition: all 0.3s ease;
+}
+
+#template:hover {
+  transform: scale(1.2);
+}

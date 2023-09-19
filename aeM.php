@@ -19,6 +19,9 @@
             
             <!-- File Input for Uploading CourseList -->
         <form class="d-none" id="courseListUploadForm">
+          <a href="courseTemplate.xlsx" download="courseTemplate.xlsx">
+            <img id="template" src="dev_image/excel.png" alt="">
+          </a>
         <div class="upload-section">
               <label for="courseListFileInput">Upload Course List (only .xlsx)</label>
               <input type="file" id="courseListFileInput" name="courseListFile" accept=".xlsx">

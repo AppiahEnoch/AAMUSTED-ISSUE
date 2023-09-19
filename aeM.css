@@ -152,4 +152,13 @@ select:focus {
 }
 .icon-row a i {
   margin: 0 10px;
+}
+
+#template {
+  max-width: 4rem;
+  transition: all 0.3s ease;
+}
+
+#template:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=aeM.css.map */
