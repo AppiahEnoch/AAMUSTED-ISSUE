@@ -22,10 +22,8 @@
   padding: 0;
 }
 #indexwrapper label {
-  height: 2.8125rem;
   font-size: 1.125rem;
   border-radius: 0.5rem;
-  padding: 0.1rem 0.25rem;
 }
 
 #studentCardContainer {

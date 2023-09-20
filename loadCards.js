@@ -25,7 +25,7 @@ function generateCards() {
                   <h5 class="card-title">
                     <span id="courseCode-${course.id}">${course.course_code}</span>
                     <span id="courseTitle-${course.id}">${course.title}</span>
-                    <span id="courseSemYear-${course.id}">semester: ${course.semester} year: ${course.year}</span>
+                    <span id="courseSemYear-${course.id}">Semester: ${course.semester} Year: ${course.year}</span>
                   </h5>
                 </div>
                 <div class="card issueOptionsCard" id="issueSection-${course.id}">

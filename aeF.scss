@@ -24,25 +24,20 @@
         font-size: 1.125rem;
         border-radius: 0.5rem;
         border: none;
-   
-        padding: 0
+        padding: 0;
       }
     }
 
     label{
-        height: 2.8125rem;
+     
      
         font-size: 1.125rem;
         border-radius: 0.5rem;
    
-        padding: 0.1rem 0.25rem;
+   
     }
   }
   
-
-
-
-
 #studentCardContainer {
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +46,6 @@
   }
   
   .issueCard {
-
     border-color: #8C003B;
     margin-bottom: 2.4rem;
     flex: 0 1 calc(33.333% - 2rem);
@@ -59,15 +53,12 @@
     height: 15rem;
     max-height: 15rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
     &:hover {
       transform: scale(1.05);
     }
-  
     @media(max-width: 768px) {
       flex: 0 1 calc(50% - 2rem);
     }
-  
     @media(max-width: 480px) {
       flex: 0 1 100%;
     }
@@ -75,7 +66,6 @@
     .card {
       &.courseIssueCard {
         margin: 0.2rem;
-  
         .card-title {
           font-size: 1rem;
         }

@@ -5,9 +5,20 @@ $(document).ready(function () {
     $("#saveChoice,#footerSaveChoice").click(function () {
       const indexNumber = $("#indexNumber").val();
 
+
+
+
+
+
       if(aeEmpty(indexNumber)) {
         showToast("aeToastE", "INDEX NUMBER REQUIRED", "Please enter your index number.", "20");
         return;
+      }
+
+      if (!/^\d{10}$/.test(indexNumber)) {
+        $("#indexNumber").val('');
+        showToast("aeToastE", "Invalid Index Number", "Index number must be exactly 10 numeric digits.", "20");
+      return
       }
   
       $.ajax({

@@ -4,11 +4,12 @@
             <div class="card">
                 <div class="card-body">
                  <div class="row">
-                    <div class="col-2">
-                    <label  for="indexNumber">Index Number</label>
+                    <div class="col-2 d-none">
+                   
                     </div>
-                    <div class="col-10">
-                    <input type="text" class="form-control" name="indexNumber" id="indexNumber" placeholder="Enter Index Number here">
+                    <div class="col">
+                    <label  for="indexNumber">Index Number</label>
+                    <input type="number" class="form-control" name="indexNumber" id="indexNumber" placeholder="Enter Index Number here">
                 
                     </div>
                  </div>

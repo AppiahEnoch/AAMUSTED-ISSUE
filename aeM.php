@@ -96,7 +96,7 @@
     <br>
 
     <br>
-    4.click on Save.
+    4.Click on Save.
     <br>
 
   </p>
