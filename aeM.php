@@ -82,7 +82,7 @@
             <!-- Instructions -->
             <div class="mb-3">
   <p>
-    WARNING: For Students Experiencing Course Issues Only!
+    WARNING:This is For Students Experiencing Course Issues Only!
   </p>
   <p>
     Follow these steps carefully:
