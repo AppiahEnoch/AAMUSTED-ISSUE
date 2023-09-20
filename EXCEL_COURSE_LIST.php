@@ -12,7 +12,7 @@ use PhpOffice\PhpSpreadsheet\Style\Alignment;
 $spreadsheet = new Spreadsheet();
 $sheet = $spreadsheet->getActiveSheet();
 
-$sql = "SELECT * FROM studentissueswithcoursedetails ORDER BY courseCode ASC, indexNumber ASC";
+$sql = "SELECT * FROM studentissueswithcoursedetails ORDER BY courseCode,studentoption ASC, indexNumber ASC";
 $result = $conn->query($sql);
 
 $currentRow = 1;
