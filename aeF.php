@@ -82,8 +82,9 @@
    <a href="PDFstudent.php">
    <i id="footerDownload" class="fa fa-download fa-2x me-2" aria-hidden="true" data-toggle="tooltip" title="Download your responses"></i>
    </a>
-    <i id="footerSaveChoice" class="fa fa-floppy-o fa-2x" aria-hidden="true" data-toggle="tooltip" title="Save your responses"> 
+    <i id="footerSaveChoice" class="fa fa-floppy-o fa-2x" aria-hidden="true" data-toggle="tooltip" title="Save your responses">
     <span style="font-size: 1rem; color: blue; font-family: Arial; display: block; text-align: center;">save</span>
+    </i>
   
    
 </div>
