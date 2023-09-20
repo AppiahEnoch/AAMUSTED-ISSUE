@@ -26,6 +26,28 @@ $pdf->SetFont('Arial', 'B', 10);
 // ... [rest of PDF formatting code here
 
 
+
+$pdf->SetX(-110);
+$pdf->Cell(100, 6, date("l jS \of F Y h:i:s A"), 0, 1, "R");
+$pdf->Ln();
+$pdf->Ln();
+
+$pdf->SetFont('Arial', 'B', 16);
+$pdf->Cell(0, 6, 'AAMUSTED STUDENT COMPLAINT REPORT ON COURSES', 0, 1, 'C');
+$pdf->Ln();
+
+$pdf->SetTextColor(0, 0, 255);
+$pdf->SetFont('Arial', 'BU', 18);
+$pdf->Cell(0, 6, "INDEX NUMBER: " . $indexNumber, 0, 1, 'C');
+$pdf->SetTextColor(0, 0, 0);
+$pdf->Ln();
+$pdf->Ln();
+
+$pdf->SetFont('Arial', 'B', 12);
+
+
+
+
 $pdf->SetWidths(array(40, 100, 50));
 
 // Add Column Headers
