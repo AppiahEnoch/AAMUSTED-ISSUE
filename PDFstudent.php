@@ -30,7 +30,7 @@ $pdf->SetWidths(array(40, 100, 50));
 // Add Column Headers
 $pdf->Row(array('COURSE CODE', 'COURSE TITLE', 'ISSUE'));
 
-$sql = "SELECT * FROM StudentIssuesWithCourseDetails WHERE indexNumber = ?";
+$sql = "SELECT * FROM studentissueswithcoursedetails WHERE indexnumber = ?";
 $stmt = $conn->prepare($sql);
 
 if (!$stmt) {
