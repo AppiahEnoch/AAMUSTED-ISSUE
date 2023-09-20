@@ -9,7 +9,7 @@
                  
                     </div>
                     <div class="col-10">
-                    <input type="text" class="form-control" name="indexNumber" id="indexNumber" placeholder="Enter Index Number">
+                    <input type="text" class="form-control" name="indexNumber" id="indexNumber" placeholder="Enter Index Number here">
                 
                     </div>
                  </div>
