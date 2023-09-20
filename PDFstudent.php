@@ -23,8 +23,6 @@ $pdf = new PDF_MC_Table();
 $pdf->AddPage();
 $pdf->SetFont('Arial', 'B', 10);
 
-// ... [rest of PDF formatting code here
-
 
 
 $pdf->SetX(-110);
@@ -48,10 +46,10 @@ $pdf->SetFont('Arial', 'B', 12);
 
 
 
-$pdf->SetWidths(array(40, 100, 50));
+$pdf->SetWidths(array(20,20,20, 80, 50));
 
 // Add Column Headers
-$pdf->Row(array('COURSE CODE', 'COURSE TITLE', 'ISSUE'));
+$pdf->Row(array('COURSE CODE','year','semester', 'COURSE TITLE', 'ISSUE'));
 
 $sql = "SELECT * FROM studentissueswithcoursedetails WHERE indexnumber = ?";
 $stmt = $conn->prepare($sql);
@@ -70,7 +68,7 @@ $result = $stmt->get_result();
 
 if ($result) {
     while ($row = $result->fetch_assoc()) {
-        $pdf->Row(array($row['course_code'], $row['title'], $row['studentoption']));
+        $pdf->Row(array($row['course_code'],$row["year"],$row["semester"],$row['title'], $row['studentoption']));
     }
 } else {
     die("Error fetching results: (" . $stmt->errno . ") " . $stmt->error);
