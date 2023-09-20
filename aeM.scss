@@ -219,3 +219,22 @@ select {
 #template:hover {
   transform: scale(1.2);
 }
+
+
+
+.nav-link-refresh {
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 15px; /* increased padding for a more clickable area */
+  border-radius: 5px; /* rounded corners for a softer look */
+}
+
+.nav-link-refresh:hover {
+  background-color:transparent;
+  color: #333;
+
+}
+
+.nav-link-refresh i {
+  margin-right: 5px;  /* gives some space between the icon and text */
+  
+}

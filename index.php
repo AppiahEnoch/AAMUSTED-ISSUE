@@ -116,6 +116,12 @@
             <li class="nav-item">
               <a onclick="aeModal2('uploadLecturesModal')" class="nav-link ms-2" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Admin</a>
             </li>
+            <li class="nav-item">
+    <a class="nav-link nav-link-refresh ms-2" href="index.php">
+        <i class="fa fa-refresh" aria-hidden="true"></i>Refresh
+    </a>
+</li>
+
             
           </ul>
         </div>
