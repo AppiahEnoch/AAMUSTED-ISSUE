@@ -6,14 +6,13 @@
                  <div class="row">
                     <div class="col-2">
                     <label  for="indexNumber">Index Number</label>
-                 
                     </div>
                     <div class="col-10">
                     <input type="text" class="form-control" name="indexNumber" id="indexNumber" placeholder="Enter Index Number here">
                 
                     </div>
                  </div>
-                
+              
                 </div>
             </div>
         </div>

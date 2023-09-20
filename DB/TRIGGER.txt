@@ -1,0 +1,26 @@
+DELIMITER //
+CREATE TRIGGER trg_course_delete AFTER DELETE ON course
+FOR EACH ROW
+BEGIN
+    DELETE FROM studentissues WHERE courseCode = OLD.course_code;
+END;
+//
+DELIMITER ;
+
+
+
+
+
+
+DELIMITER //
+CREATE TRIGGER trg_course_update AFTER UPDATE ON course
+FOR EACH ROW
+BEGIN
+    IF OLD.course_code != NEW.course_code THEN
+        UPDATE studentissues
+        SET courseCode = NEW.course_code
+        WHERE courseCode = OLD.course_code;
+    END IF;
+END;
+//
+DELIMITER ;

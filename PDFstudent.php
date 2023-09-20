@@ -23,7 +23,8 @@ $pdf = new PDF_MC_Table();
 $pdf->AddPage();
 $pdf->SetFont('Arial', 'B', 10);
 
-// ... [rest of PDF formatting code here]
+// ... [rest of PDF formatting code here
+
 
 $pdf->SetWidths(array(40, 100, 50));
 
