@@ -49,7 +49,7 @@ $pdf->SetFont('Arial', 'B', 12);
 $pdf->SetWidths(array(20,20,20, 80, 50));
 
 // Add Column Headers
-$pdf->Row(array('COURSE CODE','year','semester', 'COURSE TITLE', 'ISSUE'));
+$pdf->Row(array('COURSE CODE','YEAR','SEMESTER', 'COURSE TITLE', 'ISSUE'));
 
 $sql = "SELECT * FROM studentissueswithcoursedetails WHERE indexnumber = ?";
 $stmt = $conn->prepare($sql);
